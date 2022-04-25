@@ -17,9 +17,9 @@ public class SimpleCalculator {
 					+ "\n4.division"
 					+"\n5.stoptheprogram.");
 			operand = sc.nextInt();
-		System.out.println("enter the numbers you want to perform the operations on");
-	
+		System.out.println("enter the first number:");
 		a= sc.nextInt();
+		System.out.println("enter the second number:");
 		b= sc.nextInt();
 		
 		switch(operand) {

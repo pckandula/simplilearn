@@ -46,6 +46,7 @@ public class SimpleCalculator {
 			isexit = true;
 			break;
 					}
+		if(operand != 5)
 		System.out.println(result);
 		}
 		

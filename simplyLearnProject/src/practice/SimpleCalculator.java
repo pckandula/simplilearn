@@ -47,7 +47,7 @@ public class SimpleCalculator {
 			break;
 					}
 		if(operand != 5)
-		System.out.println(result);
+		System.out.println("The result is :"+result);
 		}
 		
 	}

@@ -17,11 +17,13 @@ public class SimpleCalculator {
 					+ "\n4.division"
 					+"\n5.stoptheprogram.");
 			operand = sc.nextInt();
+			if(operand != 5)
+			{
 		System.out.println("enter the first number:");
 		a= sc.nextInt();
 		System.out.println("enter the second number:");
 		b= sc.nextInt();
-		
+			}
 		switch(operand) {
 		case 1:
 				result = a+b;
@@ -33,7 +35,12 @@ public class SimpleCalculator {
 				result = a*b;
 				break;
 		case 4 :
+			try {
 				result = a/b;
+			}
+			catch(ArithmeticException e) {
+				e.printStackTrace();
+			}
 				break;
 		case 5 :
 			isexit = true;
@@ -41,6 +48,7 @@ public class SimpleCalculator {
 					}
 		System.out.println(result);
 		}
+		
 	}
 
 }
